@@ -53,8 +53,8 @@ else{
         $appinfo | Out-IniFile -Force -Encoding ASCII -FilePath ".\microPortable\App\AppInfo\appinfo.ini"
 
         $launcher = Get-IniContent ".\microPortable\App\AppInfo\Launcher\microPortable.ini"
-        $launcher["Launch"]["ProgramExecutable"]=-join(micro-win32\,$asset1.name.replace('-win32.zip',''),"\micro.exe")
-        $launcher["Launch"]["ProgramExecutable64"]=-join(micro-win64\$asset2.name.replace('-win64.zip',''),"\micro.exe")
+        $launcher["Launch"]["ProgramExecutable"]=-join("micro-win32\",$asset1.name.replace('-win32.zip',''),"\micro.exe")
+        $launcher["Launch"]["ProgramExecutable64"]=-join("micro-win64\",$asset2.name.replace('-win64.zip',''),"\micro.exe")
         $launcher | Out-IniFile -Force -Encoding ASCII -FilePath ".\microPortable\App\AppInfo\Launcher\microPortable.ini"
         Write-Host "Bumped to "+$tag2
         echo "SHOULD_COMMIT=yes" | Out-File -FilePath $Env:GITHUB_ENV -Encoding utf8 -Append
