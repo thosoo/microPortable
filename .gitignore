@@ -1,10 +1,11 @@
 
 ./.DS_Store
-PrusaSlicerPortable/.DS_Store
-PrusaSlicerPortable/App/.DS_Store
-PrusaSlicerPortable/App/AppInfo/.DS_Store
-Data/PortableApps.comLauncherRuntimeData-PrusaSlicerPortable.ini
-Data/settings/PrusaSlicerPortableSettings.ini
+microPortable/.DS_Store
+microPortable/App/.DS_Store
+microPortable/App/AppInfo/.DS_Store
+Data/PortableApps.comLauncherRuntimeData-microPortable.ini
+Data/settings/microPortableSettings.ini
 pac_installer_log.ini
-PrusaSlicerPortable/Other/Source/PortableApps.comInstaller*
+microPortable/Other/Source/PortableApps.comInstaller*
 *.paf.exe
+microPortable/*.exe
