@@ -7,7 +7,7 @@ try {
 $repoName = "zyedidia/micro"
 $releasesUri = "https://api.github.com/repos/$repoName/releases/latest"
 $tag = (Invoke-WebRequest $releasesUri | ConvertFrom-Json).tag_name
-$tag2 = $tag.replace('version_','') #-Replace '-.*',''
+$tag2 = $tag.replace('v','') #-Replace '-.*',''
 Write-Host $tag2
 if ($tag2 -match "alpha")
 {
